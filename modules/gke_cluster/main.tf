@@ -29,7 +29,7 @@ resource "google_container_cluster" "gke_cluster" {
   # Allow access to Kubernetes master API Endpoint
   master_authorized_networks_config {
     cidr_blocks {
-      cidr_block = var.mater_authorized_ip_range
+      cidr_block = var.master_authorized_ip_range
       display_name = var.master_authorized_ip_range_name
     }
   }
